@@ -4,7 +4,27 @@ LLM GPU Profiler is an evidence-grounded performance engineering agent for train
 
 ## Dashboard Preview
 
-![LLM GPU Profiler Dashboard](./dashboard_screenshot.png)
+Preview generated from the latest dashboard PDF:
+
+[![LLM GPU Profiler Dashboard Preview](./dashboard_preview_from_pdf.png)](./LLM%20GPU%20Profiler%20Dashboard.pdf)
+
+## Simple Flow Diagram
+
+```mermaid
+flowchart TD
+    A[Collect Telemetry<br/>GPU, NCCL, CPU, Latency] --> B[Build Structured State<br/>time + rank aware features]
+    B --> C[Run Deterministic Detectors<br/>memory, communication, idle, imbalance]
+    C --> D[LLM Reasoning Over Evidence]
+    D --> E[Diagnosis Output<br/>bottleneck + confidence + evidence]
+    E --> F{Need More Evidence?}
+    F -->|Yes| G[Request Safe Profiling Actions]
+    G --> A
+    F -->|No| H[Recommend Optimization Experiment]
+    H --> I[Run Before/After Validation]
+    I --> J[Report Improvement or Regression]
+```
+
+This is the full loop: measure -> reason -> test -> validate.
 
 ## Core Architecture
 
