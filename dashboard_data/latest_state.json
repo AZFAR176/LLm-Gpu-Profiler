@@ -1,0 +1,115 @@
+{
+  "run_id": "demo-run-001",
+  "gpu_util_pct": 84.5,
+  "mfu_pct": 39.0,
+  "hbm_bw_pct": 91.0,
+  "memory_used_pct": 78.0,
+  "nccl_time_pct": 11.0,
+  "cpu_dataloader_time_pct": 9.0,
+  "gpu_idle_pct": 4.0,
+  "step_latency_ms": 412.0,
+  "step_latency_p50_ms": null,
+  "step_latency_p95_ms": null,
+  "step_latency_p99_ms": null,
+  "throughput_toks_per_sec": 18400.0,
+  "sequence_length": 8192.0,
+  "batch_size": 64.0,
+  "world_size": 8.0,
+  "kernel_launch_overhead_pct": 6.0,
+  "metric_distributions": {
+    "gpu_util": {
+      "mean": 84.5,
+      "p50": 84.5,
+      "p95": 85.85,
+      "p99": 85.97,
+      "std": 1.118033988749895,
+      "min": 83.0,
+      "max": 86.0,
+      "by_rank": {
+        "0": 86.0,
+        "1": 84.0,
+        "2": 85.0,
+        "3": 83.0
+      }
+    },
+    "nccl_time": {
+      "mean": 11.0,
+      "p50": 11.0,
+      "p95": 11.85,
+      "p99": 11.969999999999999,
+      "std": 0.7071067811865476,
+      "min": 10.0,
+      "max": 12.0,
+      "by_rank": {
+        "0": 10.0,
+        "1": 11.0,
+        "2": 12.0,
+        "3": 11.0
+      }
+    },
+    "mfu": {
+      "mean": 39.0,
+      "p50": 39.0,
+      "p95": 39.85,
+      "p99": 39.97,
+      "std": 0.7071067811865476,
+      "min": 38.0,
+      "max": 40.0,
+      "by_rank": {
+        "0": 39.0,
+        "1": 38.0,
+        "2": 40.0,
+        "3": 39.0
+      }
+    },
+    "hbm_bw": {
+      "mean": 91.0,
+      "p50": 91.0,
+      "p95": 91.85,
+      "p99": 91.97,
+      "std": 0.7071067811865476,
+      "min": 90.0,
+      "max": 92.0,
+      "by_rank": {
+        "0": 90.0,
+        "1": 92.0,
+        "2": 91.0,
+        "3": 91.0
+      }
+    }
+  },
+  "phase_breakdown_pct": {
+    "forward": 75.0,
+    "communication": 25.0
+  },
+  "rank_utilization_skew": 1.036144578313253,
+  "rank_step_time_skew": null,
+  "nccl_fraction_by_rank": {
+    "0": 10.0,
+    "1": 11.0,
+    "2": 12.0,
+    "3": 11.0
+  },
+  "idle_fraction_by_rank": {},
+  "topology": {
+    "gpu_model": "H100",
+    "gpu_count": 8,
+    "interconnect": "nvlink",
+    "notes": []
+  },
+  "extra_metrics": {},
+  "notes": [
+    "Loaded metrics=13, events=16"
+  ],
+  "context": {
+    "run_id": "demo-run-001",
+    "framework": "pytorch",
+    "model_name": "llama-3-8b",
+    "parameter_count_b": 8.0,
+    "dtype": "bf16",
+    "parallelism": "fsdp",
+    "gpu_model": "H100",
+    "gpu_count": 8,
+    "interconnect": "nvlink"
+  }
+}

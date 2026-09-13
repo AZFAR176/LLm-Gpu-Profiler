@@ -1,0 +1,21 @@
+[project]
+name = "gpu-profiler-project"
+version = "0.1.0"
+description = "Automated GPU workload profiling and bottleneck diagnosis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.7.0",
+  "pynvml>=11.5.0",
+  "streamlit>=1.38.0",
+]
+
+[project.scripts]
+gpu-profiler = "gpu_profiler.main:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

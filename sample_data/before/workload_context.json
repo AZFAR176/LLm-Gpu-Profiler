@@ -1,0 +1,11 @@
+{
+  "run_id": "demo-run-001",
+  "framework": "pytorch",
+  "model_name": "llama-3-8b",
+  "parameter_count_b": 8.0,
+  "dtype": "bf16",
+  "parallelism": "fsdp",
+  "gpu_model": "H100",
+  "gpu_count": 8,
+  "interconnect": "nvlink"
+}

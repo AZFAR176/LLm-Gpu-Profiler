@@ -1,0 +1,20 @@
+{
+  "events": [
+    {"run_id":"demo-run-001","host_id":"node-a","rank":0,"local_rank":0,"gpu_uuid":"GPU-0","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"gpu_util","metric_value":86,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":1,"local_rank":1,"gpu_uuid":"GPU-1","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"gpu_util","metric_value":84,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":2,"local_rank":2,"gpu_uuid":"GPU-2","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"gpu_util","metric_value":85,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":3,"local_rank":3,"gpu_uuid":"GPU-3","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"gpu_util","metric_value":83,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":0,"local_rank":0,"gpu_uuid":"GPU-0","timestamp_ms":1726200001000,"step_id":1001,"phase":"communication","metric_name":"nccl_time","metric_value":10,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":1,"local_rank":1,"gpu_uuid":"GPU-1","timestamp_ms":1726200001000,"step_id":1001,"phase":"communication","metric_name":"nccl_time","metric_value":11,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":2,"local_rank":2,"gpu_uuid":"GPU-2","timestamp_ms":1726200001000,"step_id":1001,"phase":"communication","metric_name":"nccl_time","metric_value":12,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":3,"local_rank":3,"gpu_uuid":"GPU-3","timestamp_ms":1726200001000,"step_id":1001,"phase":"communication","metric_name":"nccl_time","metric_value":11,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":0,"local_rank":0,"gpu_uuid":"GPU-0","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"mfu","metric_value":39,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":1,"local_rank":1,"gpu_uuid":"GPU-1","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"mfu","metric_value":38,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":2,"local_rank":2,"gpu_uuid":"GPU-2","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"mfu","metric_value":40,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":3,"local_rank":3,"gpu_uuid":"GPU-3","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"mfu","metric_value":39,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":0,"local_rank":0,"gpu_uuid":"GPU-0","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"hbm_bw","metric_value":90,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":1,"local_rank":1,"gpu_uuid":"GPU-1","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"hbm_bw","metric_value":92,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":2,"local_rank":2,"gpu_uuid":"GPU-2","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"hbm_bw","metric_value":91,"unit":"pct","source":"sim"},
+    {"run_id":"demo-run-001","host_id":"node-a","rank":3,"local_rank":3,"gpu_uuid":"GPU-3","timestamp_ms":1726200001000,"step_id":1001,"phase":"forward","metric_name":"hbm_bw","metric_value":91,"unit":"pct","source":"sim"}
+  ]
+}

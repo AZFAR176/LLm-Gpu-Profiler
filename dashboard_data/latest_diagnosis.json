@@ -1,0 +1,37 @@
+{
+  "primary_bottleneck": "memory_bandwidth_bound",
+  "confidence": 0.78,
+  "evidence": [
+    "mfu_pct=39.0 (< 40.0)",
+    "hbm_bw_pct=91.0 (> 75.0)"
+  ],
+  "evidence_ids": [
+    "trace://demo-run-001/finding/memory_bandwidth_detector_v1/mfu",
+    "trace://demo-run-001/finding/memory_bandwidth_detector_v1/hbm"
+  ],
+  "likely_root_causes": [
+    "Memory movement dominates kernel runtime.",
+    "Arithmetic intensity is low relative to bandwidth demand."
+  ],
+  "missing_evidence": [
+    "Kernel roofline evidence by phase."
+  ],
+  "recommended_actions": [
+    "Enable fused kernels and FlashAttention.",
+    "Reduce unnecessary memory movement and activation churn."
+  ],
+  "next_experiment": {
+    "hypothesis": "Memory bandwidth is limiting throughput.",
+    "action": "Enable fused kernels and compare against baseline.",
+    "measure": [
+      "step_latency_ms",
+      "mfu_pct",
+      "hbm_bw_pct",
+      "throughput_toks_per_sec"
+    ],
+    "stop_condition": "Accept if latency decreases >=8% without memory regressions."
+  },
+  "ask_for_more_profiling": false,
+  "profiling_request": null,
+  "requested_profiling_actions": []
+}
