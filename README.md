@@ -4,9 +4,7 @@ LLM GPU Profiler is an evidence-grounded performance engineering agent for train
 
 ## Dashboard Preview
 
-Preview generated from the latest dashboard PDF:
-
-[![LLM GPU Profiler Dashboard Preview](./dashboard_preview_from_pdf.png)](./LLM%20GPU%20Profiler%20Dashboard.pdf)
+![LLM GPU Profiler Dashboard Preview](./dashboard_preview_from_pdf.png)
 
 ## Simple Flow Diagram
 
