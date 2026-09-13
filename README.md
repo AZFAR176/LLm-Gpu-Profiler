@@ -2,15 +2,9 @@
 
 LLM GPU Profiler is an evidence-grounded performance engineering agent for training and inference workloads. It combines time/rank-aware telemetry, deterministic bottleneck detectors, and structured LLM reasoning to diagnose root causes, request targeted follow-up profiling, and validate whether recommended changes improve throughput, latency, and efficiency.
 
-## Dashboard Report (PDF)
+## Dashboard Preview
 
-View the full report here:
-
-- [Open LLM GPU Profiler Dashboard PDF](./LLM%20GPU%20Profiler%20Dashboard.pdf)
-
-Preview (click to open PDF):
-
-[![LLM GPU Profiler Dashboard Preview](./dashboard_screenshot.png)](./LLM%20GPU%20Profiler%20Dashboard.pdf)
+![LLM GPU Profiler Dashboard](./dashboard_screenshot.png)
 
 ## Core Architecture
 
