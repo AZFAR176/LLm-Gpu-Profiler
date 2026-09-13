@@ -264,3 +264,16 @@ If provider call fails or response schema is invalid, pipeline falls back to det
 - Executor runs only allowlisted profiling actions with bounded parameters.
 - Arbitrary shell execution is not part of the action path.
 
+## GPU Fundamentals Resources
+
+- [CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/)
+- [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/)
+- [Nsight Compute Profiling Guide](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html)
+- [Nsight Compute Roofline Charts](https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline-charts)
+- [Nsight Systems User Guide](https://docs.nvidia.com/nsight-systems/UserGuide/index.html)
+- [NCCL Documentation](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/)
+- [NCCL Tests (bandwidth/latency sanity checks)](https://github.com/NVIDIA/nccl-tests)
+- [PyTorch Profiler Docs](https://pytorch.org/docs/stable/profiler.html)
+- [PyTorch Distributed Overview](https://pytorch.org/docs/stable/distributed.html)
+- [Megatron-LM (large-scale training performance patterns)](https://github.com/NVIDIA/Megatron-LM)
+
