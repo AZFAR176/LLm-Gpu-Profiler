@@ -167,8 +167,7 @@ def _a3_summary_page(output: dict) -> None:
     diagnosis = output.get("diagnosis", {})
     validation = output.get("validation")
 
-    st.subheader("A3 Summary: One-Page View")
-    st.caption("Designed for screenshot and print-style review")
+    st.subheader("Summary")
 
     st.markdown("### 1) Current Performance")
     p1, p2, p3, p4 = st.columns(4)
@@ -252,7 +251,7 @@ def main() -> None:
     page = st.sidebar.radio(
         "Select page",
         (
-            "A3 Summary - One Page",
+            "Summary",
             "Page 1 - Live Telemetry",
             "Page 2 - Agent Diagnosis",
             "Page 3 - Validation + Usage",
@@ -273,7 +272,7 @@ def main() -> None:
         llm_calls = output.get("llm_calls", [])
         _top_banner(output)
 
-        if page == "A3 Summary - One Page":
+        if page == "Summary":
             _a3_summary_page(output)
         elif page == "Page 1 - Live Telemetry":
             _telemetry_page(state)
